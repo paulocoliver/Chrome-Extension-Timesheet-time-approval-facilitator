@@ -1,0 +1,24 @@
+{
+    "name": "Timesheet - time approval facilitator",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Filtra no timesheet somente as horas que estão pendentes de aprovação, ordena com as mais antigas e abre a primeira da lista.",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "contentscript.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+    ],
+    "web_accessible_resources": [
+        "script.js"
+    ]
+}
